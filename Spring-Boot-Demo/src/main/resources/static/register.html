@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background: url("picturelogin2.jpg") no-repeat center;
+        padding-top: 25px;
+        background-position:0% 0%;
+        background-size: 100%;
+    }
+
+    .rg_layout{
+        width: 700px;
+        height: 300px;
+        border: 8px solid #EEEEEE;
+        background-color: white;
+        margin-top:5cm;
+        margin-left: 10cm;
+    }
+
+    .rg_left{
+        /*border: 1px solid red;*/
+        float: left;
+        margin: 15px;
+        color:#FFD026;
+        font-size: 30px;
+    }
+
+    .rg_center{
+        /*border: 1px solid red;*/
+        float: left;
+        margin-top: 2cm;
+        margin-left: -1cm;
+    }
+
+    .rg_right{
+        /*border: 1px solid red;*/
+        float: right;
+        margin-bottom:15px;
+    }
+
+    .rg_right > p:first-child{
+        font-size: 15px;
+
+    }
+    .rg_right p a {
+        color:blue;
+    }
+
+    .td_left{
+        width: 100px;
+        text-align: right;
+        height: 45px;
+    }
+    .td_right{
+        padding-left: 50px ;
+    }
+
+    #username,#password{
+        width: 251px;
+        height: 32px;
+        border: 1px solid #A6A6A6 ;
+        /*设置边框圆角*/
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    #btn_sub{
+        width: 150px;
+        height: 40px;
+        background-color: #FFD026;
+        border: 1px solid #FFD026 ;
+        font-weight: 900;
+        font-size: 110%;
+        margin-top:1.5cm;
+    }
+ 
+</style>
+
+</head>
+<body>
+
+<div class="rg_layout">
+    <div class="rg_left">
+        <p>用户注册</p>
+
+    </div>
+
+    <div class="rg_center">
+        <div class="rg_form">
+            <!--定义表单 form-->
+            <form action="/Reg/register" method="post">
+                <table>
+                    <tr>
+                        <td class="td_left"><label for="username">用户名</label></td>
+                        <td class="td_right"><input type="text" name="username" id="username" placeholder="请输入用户名"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="password">密码</label></td>
+                        <td class="td_right"><input type="password" name="password" id="password" placeholder="请输入密码"></td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" id="btn_sub" value="注册"></td>
+                    </tr>
+                </table>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <div class="rg_right">
+        <p>已有账号?<a href="login.html">立即登录</a></p>
+        <!--herf跳转到登录页面，现在为空-->
+    </div>
+
+</div>
+
+
+</body>
+</html>
