@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+//基于Mybatis
 @Repository
 public interface CommentlistDao {
 

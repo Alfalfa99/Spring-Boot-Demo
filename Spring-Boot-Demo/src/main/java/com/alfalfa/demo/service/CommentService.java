@@ -14,9 +14,10 @@ import java.util.List;
  */
 @Service
 public class CommentService {
-
+    //自动注入
     @Autowired
     CommentlistDao commentlistDao;
+    //CommentlistDao commentlistDao = new CommentlistDao();
     @Autowired
     CourseService courseService;
 

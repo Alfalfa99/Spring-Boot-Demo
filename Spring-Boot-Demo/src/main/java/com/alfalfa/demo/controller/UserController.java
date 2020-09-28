@@ -38,7 +38,6 @@ public class UserController {
         //System.out.println(page.getTotal());
         return RespBean.ok("200","success",course);
     }
-
     @PostMapping("/updateUserDetail")
     public RespBean updateUserDetail(Model model,@RequestBody User user){
         User last_user = (User) model.getAttribute("user");
